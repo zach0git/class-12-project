@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="select-quiz-container">
+        <h1>Select a Quiz</h1>
+        <form method="post">
+            <select name="quiz_file">
+                {% for quiz in quizzes %}
+                <option value="{{ quiz }}">{{ quiz }}</option>
+                {% endfor %}
+            </select><br>
+            <input type="submit" value="Start Quiz">
+        </form>
+    </div>
+</body>
+</html>

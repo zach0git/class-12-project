@@ -1,0 +1,3 @@
+What is the capital of France?,Paris,London,Berlin,Madrid,Paris
+Who developed the theory of relativity?,Newton,Einstein,Galileo,Darwin,Einstein
+What is the boiling point of water?,90°C,100°C,110°C,120°C,100°C

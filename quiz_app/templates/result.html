@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Result</h1>
+        <table>
+            <tr>
+                <th>Serial No</th>
+                <th>Username</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>{{ username }}</td>
+                <td>{{ score }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

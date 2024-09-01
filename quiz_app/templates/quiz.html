@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <form method="post">
+            {% for i, question in enumerate(questions) %}
+            <div class="question-block">
+                <p>{{ i + 1 }}. {{ question.question }}</p>
+                {% for option in question.options %}
+                <input type="radio" name="question_{{ i }}" value="{{ option }}" required>{{ option }}<br>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            <input type="submit" value="Submit Quiz">
+        </form>
+    </div>
+</body>
+</html>
